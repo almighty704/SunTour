@@ -1319,8 +1319,8 @@ body {
   height: 270px;
   background: linear-gradient(-45deg, #ee765225, #e73c7e31, #23a5d527, #f7f7f7);
   background-size: 600% 600%;
-  -webkit-animation: gradient 5s ease infinite !important;
-          animation: gradient 5s ease infinite !important;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
 }
 
 .main .blog__container .owl-carousel .item-content {
