@@ -523,14 +523,14 @@ body {
   }
 
   .about {
-    .container {
-      @include container();
-    }
     &__background {
       background: url('https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
       @include img-default();
     }
     &__container {
+      .container {
+        @include container();
+      }
       .left {
         margin: auto 3em auto 3em;
         color: $white;
@@ -563,7 +563,7 @@ body {
   .recomended {
     background: #fafafa;
     padding: 7em 0;
-
+    margin-top: -25px;
     &__top {
       margin-bottom: 53px;
 
@@ -726,6 +726,9 @@ body {
   }
 
   .testimonials {
+    .container {
+      @include container();
+    }
     background: #94a0ab;
     &__container {
       padding: 7em 0;
@@ -843,12 +846,9 @@ body {
             }
             .line {
               text-align: center;
-              background: $color-yellow;
               width: 30px;
-              height: 2px;
-              margin-top: 12px;
-              margin-left: 170px;
-              margin-bottom: 35px;
+              @include line();
+              margin: 20px auto;
             }
 
             .card-content-footer {
@@ -875,15 +875,11 @@ body {
         }
       }
     }
-    .container {
-      @include container();
-    }
   }
 
   .gallery {
     background: #fafafa;
     padding: 7em 0;
-    margin-bottom: 53px;
     .container {
       @include container();
     }

@@ -566,16 +566,16 @@ body {
   color: #939ea9;
 }
 
-.main .about .container {
-  width: 1200px;
-  max-width: 100%;
-}
-
 .main .about__background {
   background: url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
+}
+
+.main .about__container .container {
+  width: 1200px;
+  max-width: 100%;
 }
 
 .main .about__container .left {
@@ -614,6 +614,7 @@ body {
 .main .recomended {
   background: #fafafa;
   padding: 7em 0;
+  margin-top: -25px;
 }
 
 .main .recomended__top {
@@ -823,6 +824,11 @@ body {
   background: #94a0ab;
 }
 
+.main .testimonials .container {
+  width: 1200px;
+  max-width: 100%;
+}
+
 .main .testimonials__container {
   padding: 7em 0;
 }
@@ -960,12 +966,10 @@ body {
 
 .main .testimonials__container__card .card--content .line {
   text-align: center;
-  background: #ffc107;
   width: 30px;
+  background: #ffc107;
   height: 2px;
-  margin-top: 12px;
-  margin-left: 170px;
-  margin-bottom: 35px;
+  margin: 20px auto;
 }
 
 .main .testimonials__container__card .card--content .card-content-footer {
@@ -1004,15 +1008,9 @@ body {
   background: url("https://images.unsplash.com/photo-1543968332-f99478b1ebdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
-.main .testimonials .container {
-  width: 1200px;
-  max-width: 100%;
-}
-
 .main .gallery {
   background: #fafafa;
   padding: 7em 0;
-  margin-bottom: 53px;
 }
 
 .main .gallery .container {
