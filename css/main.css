@@ -5,8 +5,6 @@
 body {
   background: #fafafa;
   overflow-x: hidden;
-  position: relative;
-  width: 100%;
 }
 
 .container {
@@ -545,24 +543,19 @@ ul {
 }
 
 .main .recomended__container__item__content__image {
-  background: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  max-width: 270px;
-  width: 100%;
+  background: url("https://gttp.imgix.net/316968/x/0/dusit-thani-residence-davao-s-entrance.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&fit=crop&h=240&w=540");
+  width: 270px;
   height: 240px;
   -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
-  position: relative;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 
 .main .recomended__container__item__content__image:hover {
   -webkit-clip-path: none;
           clip-path: none;
-  max-width: 570px;
+  width: 570px;
   position: absolute;
   right: 0;
 }
@@ -922,9 +915,13 @@ ul {
             justify-content: center;
   }
   .main .recomended__container__item__content__image {
-    max-width: 570px;
+    width: auto;
     -webkit-clip-path: none;
             clip-path: none;
+    position: relative;
+  }
+  .main .recomended__container__item__content__image:hover {
+    width: auto;
     position: relative;
   }
   .main .recomended__container__item__content__image:hover .recomended__container__item__content__image--location {
@@ -953,11 +950,7 @@ ul {
 }
 
 @media (max-width: 426px) {
-  .main
-.hero__container
-.carousel
-.carousel-inner
-.carousel-item__text--span-big {
+  .main .hero__container .carousel .carousel-inner .carousel-item__text--span-big {
     font-size: 80px;
   }
   .main .blog__carousel__item {
