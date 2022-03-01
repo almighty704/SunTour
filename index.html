@@ -2,1061 +2,1303 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SunTour</title>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <title>Document</title>
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-  <header class="header">
-    <section class="header__contact">
-      <div class="header__contact--container container ">
-        <div class="header__contact--left  contact">
-          <a class="link" href="#">support.suntour@example.com</a>
-          <span class="contact-h-span span">/</span>
-          <a class="link" href="#"><i class="fas fa-phone-alt"></i> (723)-700-1183
+    <header class="header">
+        <div class="header__contact container-fluid">
+            <div class="container d-lg-flex justify-content-between text-center header__contact--container">
+                <div class="header__contact--left contact">
+                    <a class="link" href="#">support.suntour@example.com</a>
+                    <span class="span-yellow">/</span>
+                    <a class="link" href="#"><i class="fas fa-phone-alt"></i> (723)-700-1183
           </a>
-        </div>
-        <div class="header__contact--right d-flex">
-          <a class="link link__yellow" href="#">My Account</a>
-          <div class="link dropdown">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+                </div>
+                <div class="d-flex justify-content-center align-items-center header__contact--right">
+                    <a class="link link__yellow text-center" href="#">My Account</a>
+                    <div class="link dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Currency
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Dollar</a>
-              <a class="dropdown-item" href="#">Euro</a>
-              <a class="dropdown-item" href="#">Lek</a>
-            </div>
-          </div>
-          <div class="link dropdown">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Dollar</a>
+                            <a class="dropdown-item" href="#">Euro</a>
+                            <a class="dropdown-item" href="#">Lek</a>
+                        </div>
+                    </div>
+                    <div class="link dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Language
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Shqip</a>
-              <a class="dropdown-item" href="#">English US</a>
-              <a class="dropdown-item" href="#">Italian</a>
-              <a class="dropdown-item" href="#">Chinese</a>
-              <a class="dropdown-item" href="#">French</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <nav class="navb navbar-light ">
-      <div class="navb__container  container ">
-        <a class="navbar-brand" href="#"><span class="navbar-brand--span__yellow">Sun</span>Tour</a>
-
-        <button class="toggle"> <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="  display">
-          <ul class="navb__container--list">
-            <li class="nav-item dropdown">
-              <a class="nav-link togglex dropdown-toggle" href="#">Home</a>
-              <ul class="dropdown-menu drop-js">
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Standart Slider</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Main Search </a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Full Slider</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Cipi</a></li>
-
-              </ul>
-            </li>
-            <li class="nav-item nav-item__slash">/</li>
-            <li class="nav-item dropdown">
-              <a class="nav-link togglex  dropdown-toggle" href="#">Hotels</a>
-              <ul class="dropdown-menu drop-js">
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Hotels List</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Hotels Search</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Hotels Details </a></li>
-
-              </ul>
-            </li>
-            <li class="nav-item  nav-item__slash">/</li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#">Pages</a>
-              <ul class="dropdown-menu drop-js dropdown-pages">
-                <div class="drop-flex">
-                  <div class="flex">
-                    <li><span class="dropdown-item  dropdown-span">Pages</span></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>About Us</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Services</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Our Procces</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Our Team</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Profile</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Elelemnts</a></li>
-                  </div>
-                  <div class="flex">
-                    <li><span class="dropdown-item  dropdown-span">Portofolio</span></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Three Columns</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Four Columns</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Portofolio Masonry</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>With Sidebar</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Gallery</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Portofolio Single</a>
-                    </li>
-                  </div>
-                  <div class="flex">
-                    <li><span class="dropdown-item  dropdown-span">BLOG</span></li>
-
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Two Columns + Sidebar</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Three Columns</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Four Columns</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Blog Single</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Blog Grid</a></li>
-                    <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Blog List</a></li>
-                  </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Shqip</a>
+                            <a class="dropdown-item" href="#">English US</a>
+                            <a class="dropdown-item" href="#">Italian</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                            <a class="dropdown-item" href="#">French</a>
+                        </div>
+                    </div>
                 </div>
-              </ul>
-            </li>
-            <li class="nav-item  nav-item__slash">/</li>
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#">Shop</a>
-              <ul class="dropdown-menu drop-js">
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Shop Grid</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Shop Cart</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Shop Checkout</a></li>
-                <li><a class="dropdown-item" href="#"> <i class="fas fa-chevron-right"></i>Shop Single Product</a></li>
-
-
-              </ul>
-            </li>
-            <li class="nav-item  nav-item__slash">/</li>
-            <li class="nav-item "><a href="#" class="nav-link">Contacts</a></li>
-            <li class="nav-item  nav-item__slash__big">
-            </li>
-            <li class="nav-item "><a href="#" class="nav-link nav-link__search">Search</a></li>
-          </ul>
+            </div>
         </div>
-      </div>
-    </nav>
 
-  </header>
+        <nav class="header__navbar container navbar-light bg-light">
+            <a class="header__navbar__logo" to="/home">
+        Sun<span class="">Tour</span>
+      </a>
+            <button class="toggler">Menu</button>
+            <div class="display">
+                <ul class="header__navbar__list__items">
+                    <li class="header__navbar__list__items--item">
+                        <a class="nav-link togglex dropdown-toggle" href="#">Home</a>
+                        <div class="dropdown-menux">
+                            <ul class="dropdown-items">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Standart Slider</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Main Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Full Slider</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Cipi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar__list__items--sl">/</li>
+                    <li class="header__navbar__list__items--item">
+                        <a class="nav-link togglex dropdown-toggle" href="#">Hotels</a>
+                        <div class="dropdown-menux">
+                            <ul class="dropdown-items">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Hotels List</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Hotels Search</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Hotels Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
+                    <li class="header__navbar__list__items--sl">/</li>
+                    <li class="header__navbar__list__items--item">
+                        <a class="nav-link togglex dropdown-toggle" href="#">Pages</a>
+                        <div class="dropdown-menux dropdown-pages">
+                            <div class="d-flex">
+                                <ul class="dropdown-items">
+                                    <li>
+                                        <span class="dropdown-item dropdown-span">Pages</span>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Our Procces</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Elelemnts</a>
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-items">
+                                    <li>
+                                        <span class="dropdown-item dropdown-span">Portofolio</span>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Three Columns</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Four Columns</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Portofolio Masonry
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>With Sidebar</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Portofolio Single</a>
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-items">
+                                    <li>
+                                        <span class="dropdown-item dropdown-span">BLOG</span>
+                                    </li>
 
-  <main class="main">
-    <div class="hero__container">
-      <div class="hero__container--relative">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item item item__1 active" data-bs-interval="5000">
-              <div class="carousel-item__text">
-                <h1 class="carousel-item__text--header">Welcome to</h1>
-                <span class="carousel-item__text--span-big">Dubai</span>
-                <p class="carousel-item__text--parag">Starting $255 per night</p>
-              </div>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Two Columns + Sidebar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Three Columns</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Four Columns</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Blog Single</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Blog Grid</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chevron-right"></i>Blog List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar__list__items--sl">/</li>
+                    <li class="header__navbar__list__items--item">
+                        <a class="nav-link togglex dropdown-toggle" href="#">Shop</a>
+                        <div class="dropdown-menux">
+                            <ul class="dropdown-items">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Shop Grid</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Shop Cart</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Shop Checkout</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-chevron-right"></i>Shop Single Product</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar__list__items--sl">/</li>
+
+                    <li class="header__navbar__list__items--item">
+                        <a href="#" class="nav-link"> CONTACTS </a>
+                    </li>
+                    <li class="header__navbar__list__items--sl">
+                        <div class="yellow-stroke"></div>
+                    </li>
+
+                    <li class="header__navbar__List__items--item">
+                        <a href="#" class="nav-link"> SEARCH </a>
+                    </li>
+                </ul>
             </div>
-            <div class="carousel-item item item__2" data-bs-interval="4000">
-              <div class="carousel-item__text">
-                <h1 class="carousel-item__text--h1">Welcome to</h1>
-                <span class="carousel-item__text--span-big">TIRANA</span>
-                <p class="carousel-item__text--parag">Starting $55 per night</p>
-              </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <div class="hero__container">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item item active" data-bs-interval="5000">
+                            <div class="carousel-item__text">
+                                <h1 class="carousel-item__text--header">Welcome to</h1>
+                                <span class="carousel-item__text--span-big">Dubai</span>
+                                <p class="carousel-item__text--parag">
+                                    Starting $255 per night
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item item" data-bs-interval="4000">
+                            <div class="carousel-item__text">
+                                <h2 class="carousel-item__text--header">Welcome to</h2>
+                                <span class="carousel-item__text--span-big">Ltx</span>
+                                <p class="carousel-item__text--parag">
+                                    Starting $55 per night
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item item" data-bs-interval="2000">
+                            <div class="carousel-item__text">
+                                <h2 class="carousel-item__text--header">Welcome to</h2>
+                                <span class="carousel-item__text--span-big">China</span>
+                                <p class="carousel-item__text--parag">
+                                    Starting $155 per night
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item item item__3" data-bs-interval="2000">
-              <div class="carousel-item__text">
-                <h1 class="carousel-item__text--h1">Welcome to</h1>
-                <span class="carousel-item__text--span-big">China</span>
-                <p class="carousel-item__text--parag">Starting $155 per night</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
 
+        <div class="hero__images">
+            <div class="d-xl-flex align-items-center  justify-content-between hero__images__container">
+                <div class="position-relative hero__images__container__item">
+                    <div class="justify-content-between hero__images__container__item__top">
+                        <div class="hero__images__container__item__top__left">
+                            <h6 class="hero__images__container__item__top__left--header-yellow">
+                                START PER NIGHT
+                            </h6>
+                            <span class="hero__images__container__item__top__left--price-font">99$</span>
+                            <p class="hero__images__container__item__top__left--paragraph">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
 
-    <section class="hero__images container-fluid">
-      <div class="hero__images__container">
-        <div class="hero__images__container__img img__1">
-          <div class="hero__images__container__img--text-prime ">
-            <div class="text__flex">
-              <h4 class="text__flex--h4">START PER NIGHT</h4>
-              <span class="text__flex--span-val">$80</span>
-              <p class="text__flex--text-capitalize">Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="hero__images__container__item__top__right">
+                            <h6 class="hero__images__container__item__top__right--header-yellow">
+                                Local Temperature
+                            </h6>
+                            <span class="">25°/88°</span>
+                        </div>
+                    </div>
+                    <div class="position-absolute hero__images__container__item__bottom">
+                        <div class="hero__images__container__item__bottom__content d-flex justify-content-between">
+                            <div class="hero__images__container__item__bottom__content__info">
+                                <h6 class="text-white hero__images__container__item__bottom__content--country">
+                                    France
+                                </h6>
+                                <h6 class="text-white hero__images__container__item__bottom__content--city">
+                                    Paris
+                                </h6>
+                            </div>
+
+                            <button class="btn btn-outline-warning">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative hero__images__container__item">
+                    <div class="justify-content-between hero__images__container__item__top">
+                        <div class="hero__images__container__item__top__left">
+                            <h6 class="hero__images__container__item__top__left--header-yellow">
+                                START PER NIGHT
+                            </h6>
+                            <span class="hero__images__container__item__top__left--price-font">99$</span>
+                            <p class="hero__images__container__item__top__left--paragraph">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+
+                        <div class="hero__images__container__item__top__right">
+                            <h6 class="hero__images__container__item__top__right--header-yellow">
+                                Local Temperature
+                            </h6>
+                            <span class="">25°/88°</span>
+                        </div>
+                    </div>
+                    <div class="position-absolute hero__images__container__item__bottom">
+                        <div class="hero__images__container__item__bottom__content d-flex justify-content-between">
+                            <div class="hero__images__container__item__bottom__content__info">
+                                <h6 class="text-white hero__images__container__item__bottom__content--country">
+                                    France
+                                </h6>
+                                <h6 class="text-white hero__images__container__item__bottom__content--city">
+                                    Paris
+                                </h6>
+                            </div>
+
+                            <button class="btn btn-outline-warning">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative hero__images__container__item">
+                    <div class="justify-content-between hero__images__container__item__top">
+                        <div class="hero__images__container__item__top__left">
+                            <h6 class="hero__images__container__item__top__left--header-yellow">
+                                START PER NIGHT
+                            </h6>
+                            <span class="hero__images__container__item__top__left--price-font">99$</span>
+                            <p class="hero__images__container__item__top__left--paragraph">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+
+                        <div class="hero__images__container__item__top__right">
+                            <h6 class="hero__images__container__item__top__right--header-yellow">
+                                Local Temperature
+                            </h6>
+                            <span class="">25°/88°</span>
+                        </div>
+                    </div>
+                    <div class="position-absolute hero__images__container__item__bottom">
+                        <div class="hero__images__container__item__bottom__content d-flex justify-content-between">
+                            <div class="hero__images__container__item__bottom__content__info">
+                                <h6 class="text-white hero__images__container__item__bottom__content--country">
+                                    France
+                                </h6>
+                                <h6 class="text-white hero__images__container__item__bottom__content--city">
+                                    Paris
+                                </h6>
+                            </div>
+
+                            <button class="btn btn-outline-warning">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative hero__images__container__item">
+                    <div class="justify-content-between hero__images__container__item__top">
+                        <div class="hero__images__container__item__top__left">
+                            <h6 class="hero__images__container__item__top__left--header-yellow">
+                                START PER NIGHT
+                            </h6>
+                            <span class="hero__images__container__item__top__left--price-font">99$</span>
+                            <p class="hero__images__container__item__top__left--paragraph">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                        <div class="hero__images__container__item__top__right">
+                            <h6 class="hero__images__container__item__top__right--header-yellow">
+                                Local Temperature
+                            </h6>
+                            <span class="">25°/88°</span>
+                        </div>
+                    </div>
+                    <div class="position-absolute hero__images__container__item__bottom">
+                        <div class="hero__images__container__item__bottom__content d-flex justify-content-between">
+                            <div class="hero__images__container__item__bottom__content__info">
+                                <h6 class="text-white hero__images__container__item__bottom__content--country">
+                                    France
+                                </h6>
+                                <h6 class="text-white hero__images__container__item__bottom__content--city">
+                                    Paris
+                                </h6>
+                            </div>
+
+                            <button class="btn btn-outline-warning">Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text__flex--second">
-              <h4 class="pb-2 text__flex--h4">Local</h4>
-              <h4 class="text__flex--h4"> Temperature</h4>
-              <span class="">25°/88°</span>
-            </div>
-          </div>
-          <div class="hero__images__container__img--text-second  d-flex justify-content-between ">
-            <div class="text__flex">
-              <span class="text__flex--country-span">France</span>
-              <h3 class="text__flex--city-h3">Paris</h3>
-            </div>
-            <button class="btn ">Details</button>
-          </div>
         </div>
-        <div class="hero__images__container__img img__2">
-          <div class="hero__images__container__img--text-prime ">
-            <div class="text__flex">
-              <h4 class="text__flex--h4">START PER NIGHT</h4>
-              <span class="text__flex--span-val">$80</span>
-              <p class="text__flex--text-capitalize">Lorem ipsum dolor sit amet consectetur.</p>
+
+        <div class=" margin-7 container d-lg-flex  offers__container ">
+            <div class="offers__container__text m-auto">
+                <span class="offers__container__text--span">SPECIAL OFFERS</span>
+                <h2 class="offers__container__text--header">
+                    <span>POPULAR</span> DESTINATIONS
+                </h2>
+                <div class="offers__container__text--line"></div>
+                <p class="offers__container__text--paragraph">
+                    Nullam ac dolor id nulla finibus pharetra. Sed sed placerat mauris. Pellentesque lacinia imperdiet interdum. Ut nec nulla in purus consequat lobortis. Mauris lobortis a nibh sed convallis
+                </p>
             </div>
-            <div class="text__flex--second">
-              <h4 class="pb-2 text__flex--h4">Local</h4>
-              <h4 class="text__flex--h4"> Temperature</h4>
-              <span class="">25°/88°</span>
+            <div class="offers__container__img">
+                <img class="offers__container__img--image mw-100" src="./assets/Tourist-PNG-Photo.png" alt="" />
             </div>
-          </div>
-          <div class="hero__images__container__img--text-second  d-flex justify-content-between ">
-            <div class="text__flex">
-              <span class="text__flex--country-span">Milano</span>
-              <h3 class="text__flex--city-h3">Italy</h3>
-            </div>
-            <button class="btn ">Details</button>
-          </div>
         </div>
-        <div class="hero__images__container__img img__3">
-          <div class="hero__images__container__img--text-prime ">
-            <div class="text__flex">
-              <h4 class="text__flex--h4">START PER NIGHT</h4>
-              <span class="text__flex--span-val">$80</span>
-              <p class="text__flex--text-capitalize">Lorem ipsum dolor sit amet consectetur.</p>
+
+        <div class="travel">
+            <div class="travel__container d-xl-flex">
+
+                <div class=" position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="text__flex--second">
-              <h4 class="pb-2 text__flex--h4">Local</h4>
-              <h4 class="text__flex--h4"> Temperature</h4>
-              <span class="">25°/88°</span>
+            <div class="travel__container d-xl-flex">
+
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative travel__container__item">
+                    <div class="filter">
+                        <div class="justify-content-between travel__container__item__top">
+                            <div class="travel__container__item__top__left">
+                                <h6 class="travel__container__item__top__left--header-yellow">
+                                    START PER NIGHT
+                                </h6>
+                                <span class="travel__container__item__top__left--price-font">99$</span>
+                                <p class="travel__container__item__top__left--paragraph">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                            <div class="travel__container__item__top__right">
+                                <h6 class="travel__container__item__top__right--header-yellow">
+                                    Local Temperature
+                                </h6>
+                                <span class="">25°/88°</span>
+                            </div>
+                        </div>
+                        <div class="position-absolute travel__container__item__bottom">
+                            <div class="travel__container__item__bottom__content d-flex justify-content-between">
+                                <div class="travel__container__item__bottom__content__info">
+                                    <h6 class="text-white travel__container__item__bottom__content--country">
+                                        France
+                                    </h6>
+                                    <h6 class="text-white travel__container__item__bottom__content--city">
+                                        Paris
+                                    </h6>
+                                </div>
+
+                                <button class="btn btn-outline-warning">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div class="hero__images__container__img--text-second  d-flex justify-content-between ">
-            <div class="text__flex">
-              <span class="text__flex--country-span">Germany</span>
-              <h3 class="text__flex--city-h3">Berlin</h3>
-            </div>
-            <button class="btn ">Details</button>
-          </div>
         </div>
-        <div class="hero__images__container__img img__4">
-          <div class="hero__images__container__img--text-prime">
-            <div class="text__flex">
-              <h4 class="text__flex--h4">START PER NIGHT</h4>
-              <span class="text__flex--span-val">$80</span>
-              <p class="text__flex--text-capitalize">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="text__flex__second">
-              <h4 class="pb-2 text__flex--h4">Local</h4>
-              <h4 class="text__flex--h4"> Temperature</h4>
-              <span class="">25°/88°</span>
-            </div>
-          </div>
-          <div class="hero__images__container__img--text-second  d-flex justify-content-between ">
-            <div class="text__flex">
-              <span class="text__flex--country-span">South Asia</span>
-              <h3 class="text__flex--city-h3">Maldives</h3>
-            </div>
-            <button class="btn ">Details</button>
-          </div>
+
+
+
+        <div class=" margin-7 stats ">
+            <ul class="d-flex justify-content-between   stats__list container  ">
+                <li class="d-flex stats__list__item"><img class="" src="./assets/tours.svg" alt="">
+                    <div class="stats__list__item d-flex flex-column ">
+                        <span class="stats__list__item--span">356</span>
+                        <span class="stats__list__item--span-text">Tours</span>
+                    </div>
+                </li>
+                <li class="stats__list__line"><img class="" src="./assets/line.svg" alt=""></li>
+                <li class="stats__list__item d-flex"><img class="" src="./assets/holidays.svg" alt="">
+                    <div class="stats__list__item d-flex flex-column">
+                        <span class="stats__list__item--span">438</span>
+                        <span class="stats__list__item--span-text">Holidays</span>
+                    </div>
+                </li>
+                <li class="stats__list__line"><img class="" src="./assets/line.svg" alt=""></li>
+                <li class="stats__list__item d-flex"><img class="" src="./assets/hotels.svg" alt="">
+                    <div class="stats__list__item d-flex flex-column">
+                        <span class="stats__list__item--span">526</span>
+                        <span class="stats__list__item--span-text">Hotels</span>
+                    </div>
+                </li>
+                <li class="stats__list__line"><img class="" src="./assets/line.svg" alt=""></li>
+                <li class="stats__list__item d-flex"><img class="" src="./assets/cruises.svg" alt="">
+                    <div class="stats__list__item d-flex flex-column">
+                        <span class="stats__list__item--span">169</span>
+                        <span class="stats__list__item--span-text">Cruises</span>
+                    </div>
+                </li>
+                <li class="stats__list__line"><img class="" src="./assets/line.svg" alt=""></li>
+                <li class="stats__list__item d-flex"><img class="" src="./assets/planes.svg" alt="">
+                    <div class="stats__list__item d-flex flex-column">
+                        <span class="stats__list__item--span">293</span>
+                        <span class="stats__list__item--span-text">Planes</span>
+                    </div>
+                </li>
+                <li class="stats__list__line"><img class="" src="./assets/line.svg" alt=""></li>
+                <li class="stats__list__item d-flex"><img class="" src="./assets/cars.svg" alt="">
+                    <div class="stats__list__item d-flex flex-column">
+                        <span class="stats__list__item--span">675</span>
+                        <span class="stats__list__item-span-text">Cars</span>
+                    </div>
+                </li>
+
+
+
+            </ul>
         </div>
-      </div>
-    </section>
 
 
-    <section class="offers__container container  d-flex">
-      <div class="offers__container__text">
-        <span class="offers__container__text--span">SPECIAL OFFERS</span>
-        <h2 class="offers__container__text--h2"><span>POPULAR</span> DESTINATIONS</h2>
-        <div class="offers__container__text--line"></div>
-        <p class="offers__container__text--parag">Nullam ac dolor id nulla finibus pharetra. Sed sed placerat mauris.
-          Pellentesque lacinia
-          imperdiet interdum.
-          Ut nec nulla in purus consequat lobortis. Mauris lobortis a nibh sed convallis</p>
-      </div>
-      <div class="offers__container__img">
-        <img class="offers__container__img--image" src="./assets/Tourist-PNG-Photo.png" alt="">
-      </div>
-    </section>
+        <div class="container-fluid padding-7  about ">
+            <div class="d-lg-flex text-white m-auto container about__container ">
+                <div class="about__container__left ">
+                    <h3 class="about__container__left--header">About</h3>
+                    <h3 class="about__container__left--header"><span class="about__container__left--header-yellow">Sun</span>Tour
+                    </h3>
+                    <p class="about__container__left--paragh">Vestibulum tincidunt venenatis scelerisque. Proin quis enim lacinia, vehicula massa et, mollis urna. Proin nibh mauris, blandit vitae convallis at, tincidunt vel tellus. Praesent posuere nec lectus non cursus. Sed commodo odio et ipsum
+                        sagittis tincidunt non eget felis.</p>
+                    <div class="about__container__left--line"></div>
+                    <h4 class=" about__container__left--font-paris">Andrew McDonald</h4>
+                </div>
 
-
-    <section class="travel container-fluid">
-      <div class="travel__container d-flex">
-        <div class="travel__container__img display__1">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex ">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
+                <div class="about__container__right">
+                    <iframe class="m-auto about__container__right--frame " src="https://www.youtube.com/embed/mJhFtv5UTk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">United States</span>
-                <h3 class="text__flex--h3-city">Los Angelos</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
         </div>
-        <div class="travel__container__img display__2">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">Island in French Polynesia</span>
-                <h3 class="text__flex--h3-city">Bora Bora</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="travel__container__img display__3">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">United States</span>
-                <h3 class="text__flex--h3-city">New York</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="travel__container__img display__4">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">Qatar</span>
-                <h3 class="text__flex--h3-city">Doha</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="travel__container d-flex">
-        <div class="travel__container__img display__5">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">Germany</span>
-                <h3 class="text__flex--h3-city">Berlin</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="travel__container__img display__6">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">Japan</span>
-                <h3 class="text__flex--h3-city">Tokyo</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="travel__container__img display__7">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">Russia</span>
-                <h3 class="text__flex--h3-city">Moscow</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-        <div class="travel__container__img display__8">
-          <div class="travel__container__img__background">
-            <div class="travel__container__img__background--text-prime d-flex justify-content-between">
-              <div class="text__flex first">
-                <h4 class="text__flex--h4">START PER NIGHT</h4>
-                <span class="text__flex--span-money">$80</span>
-                <p class="text__flex--parag">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="text__flex">
-                <h4 class="pb-2 text__flex--h4">Local</h4>
-                <h4 class="text__flex--h4"> Temperature</h4>
-                <span class="text__flex--span-temp">25°/88°</span>
-              </div>
-            </div>
-            <div class="travel__container__img__background--text-second  d-flex justify-content-between ">
-              <div class="text__flex">
-                <span class="text__flex--span-country">Netherelands</span>
-                <h3 class="text__flex--h3-city">Amsterdam</h3>
-              </div>
-              <button class="btn ">Details</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
-    <section class="stats container ">
-      <ul class="stats__list d-flex justify-content-between ">
-        <li class="stats__list--item d-flex"><img src="./assets/tours.svg" alt="">
-          <div class="item d-flex flex-column ">
-            <span class="item--span">356</span>
-            <span class="item--span-text">Tours</span>
-          </div>
-        </li>
-        <li class="stats__list--line"><img src="./assets/line.svg" alt=""></li>
-        <li class="stats__list--item d-flex"><img src="./assets/holidays.svg" alt="">
-          <div class="item d-flex flex-column">
-            <span class="item--span">438</span>
-            <span class="item--span-text">Holidays</span>
-          </div>
-        </li>
-        <li class="stats__list--line"><img src="./assets/line.svg" alt=""></li>
-        <li class="stats__list--item d-flex"><img src="./assets/hotels.svg" alt="">
-          <div class="item d-flex flex-column">
-            <span class="item--span">526</span>
-            <span class="item--span-text">Hotels</span>
-          </div>
-        </li>
-        <li class="stats__list--line"><img src="./assets/line.svg" alt=""></li>
-        <li class="stats__list--item d-flex"><img src="./assets/cruises.svg" alt="">
-          <div class="item d-flex flex-column">
-            <span class="item--span">169</span>
-            <span class="item--span-text">Cruises</span>
-          </div>
-        </li>
-        <li class="stats__list--line"><img src="./assets/line.svg" alt=""></li>
-        <li class="stats__list--item d-flex"><img src="./assets/planes.svg" alt="">
-          <div class="item d-flex flex-column">
-            <span class="item--span">293</span>
-            <span class="item--span-text">Planes</span>
-          </div>
-        </li>
-        <li class="stats__list--line"><img src="./assets/line.svg" alt=""></li>
-        <li class="stats__list--item d-flex"><img src="./assets/cars.svg" alt="">
-          <div class="item d-flex flex-column">
-            <span class="item--span">675</span>
-            <span class="item-span-text">Cars</span>
-          </div>
-        </li>
+        <div class="   recomended ">
+            <div class="container recomended__header">
+                <span class="recomended__header--small-yellow">Top Rated</span>
+                <h2 class="recomended__header--header"><span class="recomended__header--header-fontweight">Recomended</span> Hotels
+                </h2>
+                <div class="recomended__header--line"></div>
+                <p class="recomended__header--paragraph">Maecenas commodo odio ut vulputate cursus. Integer in egestas lectus. Nam volutpat feugiat mi vitae mollis. Aenean tristique dolor bibendum mi scelerisque ultrices non at lorem.
+                </p>
 
+            </div>
 
+            <div class="container recomended__container">
+                <div class="d-flex justify-content-between  recomended__container__item">
+                    <div class="bg-white d-sm-flex justify-content-between recomended__container__item__content">
+                        <div class="p-10 recomended__container__item__content__details">
+                            <h4 class="recomended__container__item__content__details--header">Hotel Gramshi</h4>
+                            <div class="recomended__container__item__content__details--stars">
+                                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
+                            </div>
 
-      </ul>
-    </section>
-
-
-    <secion class="about container-fluid ">
-      <div class="about__background">
-        <div class="about__container d-flex  container">
-          <div class="about__container--left left">
-            <h3 class="left--h3">About</h3>
-            <h3 class="left--h3"><span class="left--h3-yellow">Sun</span>Tour</h3>
-            <p class="left--paragh">Vestibulum tincidunt venenatis scelerisque. Proin quis enim lacinia, vehicula
-              massa et, mollis urna.
-              Proin nibh mauris, blandit vitae convallis at, tincidunt vel tellus. Praesent posuere nec lectus non
-              cursus. Sed commodo odio et ipsum sagittis tincidunt non eget felis.</p>
-            <div class="left--line"></div>
-            <h4 class=" left--text-paris">Andrew McDonald</h4>
-          </div>
-
-          <div class="about__container--right">
-            <iframe width="570" height="400" src="https://www.youtube.com/embed/mJhFtv5UTk8"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </secion>
-
-
-    <section class="recomended container-fluid">
-      <div class="recomended__top  container">
-        <span class="top top--span">Top Rated</span>
-        <h2 class="top top--h2"><span class="span">Recomended</span> Hotels</h2>
-        <div class="top top--line"></div>
-        <p class="top top--parag">Maecenas commodo odio ut vulputate cursus. Integer in egestas lectus. Nam volutpat
-          feugiat
-          mi vitae mollis.
-          Aenean tristique dolor bibendum mi scelerisque ultrices non at lorem.</p>
-      </div>
-
-
-      <div class="recomended__container container">
-        <div class="recomended__container--col ">
-          <div class="content">
-            <div class="content--text">
-              <h4 class="text_h4">Hotel Gramshi</h4>
-              <div class="stars">
-                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg"
-                  alt=""><img src="./assets/star.svg" alt="">
-              </div>
-              <div class="price">
-                <span class="dollar">$</span>
-                <span class="number">99</span> per night
-              </div>
-              <p class="parag">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
-              <div class="links  d-flex "> <a class="link" href="#">Read More</a><a class="link_bg" href="#">Book
+                            <span class="recomended__container__item__content__details--price-text">$99 per night</span>
+                            <p class="recomended__container__item__content__details--paragraph">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
+                            <div class="recomended__container__item__content__details--links  d-flex "> <a class="link" href="#">Read
+                  More</a><a class="link link--bg-yellow" href="#">Book
                   Now</a>
-              </div>
-            </div>
-            <div class="content--display img_1">
-              <span class="first ">20%</span>
-              <span class="second"><img class="m-auto" src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
-            </div>
-          </div>
-          <div class="content ">
-            <div class="content--text">
-              <h4 class="text_h4">EasyHotel</h4>
-              <div class="stars">
-                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg"
-                  alt="">
-              </div>
-              <div class="content- price"><span class="dollar__span dollar">$</span><span
-                  class="number number__span">35</span>
-                per
-                night
-              </div>
-              <p class="parag">Mauris eget hendrerit diam. Praesent a lacinia ex.
-              </p>
-              <div class="links  d-flex "> <a class="link" href="#">Read More</a><a class="link_bg" href="#">Book
+                            </div>
+                        </div>
+                        <div class="recomended__container__item__content__image">
+                            <span class="recomended__container__item__content__image--discount ">20%</span>
+                            <span class="recomended__container__item__content__image--location"><img class="m-auto"
+                  src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white d-sm-flex justify-content-between recomended__container__item__content">
+                        <div class="p-10 recomended__container__item__content__details">
+                            <h4 class="recomended__container__item__content__details--header">Hotel Gramshi</h4>
+                            <div class="recomended__container__item__content__details--stars">
+                                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
+                            </div>
+
+                            <span class="recomended__container__item__content__details--price-text">$99 per night</span>
+                            <p class="recomended__container__item__content__details--paragraph">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
+                            <div class="recomended__container__item__content__details--links  d-flex "> <a class="link" href="#">Read
+                  More</a><a class="link link--bg-yellow" href="#">Book
                   Now</a>
-              </div>
+                            </div>
+                        </div>
+                        <div class="recomended__container__item__content__image">
+                            <span class="recomended__container__item__content__image--location"><img class="m-auto"
+                  src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="content--display img_2">
-              <span class="second"><img class="m-auto" src="./assets/Location.svg" alt="">Praga, Czech Republic</span>
-            </div>
-          </div>
-        </div>
-        <div class="recomended__container--col ">
-          <div class="content ">
-            <div class="content--text">
-              <h4 class="text_h4">DOLCE VILLA</h4>
-              <div class="stars">
-                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg"
-                  alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
-              </div>
-              <div class="price"><span class="dollar">$</span><span class="number">110</span> per night</div>
-              <p class="parag">Suspendisse elit nibh, auctor ac quam id, maximus efficitur justo.</p>
-              <div class="links  d-flex "> <a class="link" href="#">Read More</a><a class="link_bg" href="#">Book
+
+
+            <div class="container recomended__container">
+                <div class="d-flex justify-content-between  recomended__container__item">
+                    <div class="bg-white d-sm-flex justify-content-between recomended__container__item__content">
+                        <div class="p-10 recomended__container__item__content__details">
+                            <h4 class="recomended__container__item__content__details--header">Hotel Gramshi</h4>
+                            <div class="recomended__container__item__content__details--stars">
+                                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
+                            </div>
+
+                            <span class="recomended__container__item__content__details--price-text">$99 per night</span>
+                            <p class="recomended__container__item__content__details--paragraph">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
+                            <div class="recomended__container__item__content__details--links  d-flex "> <a class="link" href="#">Read
+                  More</a><a class="link link--bg-yellow" href="#">Book
                   Now</a>
-              </div>
-            </div>
-            <div class="content--display img_3">
-              <span class="second"><img class="m-auto" src="./assets/Location.svg" alt="">Isle of Colonsay, US
-              </span>
-            </div>
-          </div>
-          <div class="content ">
-            <div class="content--text">
-              <h4 class="text_h4">HOTEL STARY PIVOVAR</h4>
-              <div class="stars">
-                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg"
-                  alt=""><img src="./assets/star.svg" alt="">
-              </div>
-              <div class="price"><span class="dollar">$</span><span class="number">55</span> per night</div>
-              <p class="parag">Nullam posuere tincidunt metus, nec pulvinar risus imperdiet.</p>
-              <div class="links  d-flex "> <a class="link" href="#">Read More</a><a class="link_bg" href="#">Book
+                            </div>
+                        </div>
+                        <div class="recomended__container__item__content__image">
+                            <span class="recomended__container__item__content__image--location"><img class="m-auto"
+                  src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white d-sm-flex justify-content-between recomended__container__item__content">
+                        <div class="p-10 recomended__container__item__content__details">
+                            <h4 class="recomended__container__item__content__details--header">Hotel Gramshi</h4>
+                            <div class="recomended__container__item__content__details--stars">
+                                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
+                            </div>
+
+                            <span class="recomended__container__item__content__details--price-text">$99 per night</span>
+                            <p class="recomended__container__item__content__details--paragraph">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
+                            <div class="recomended__container__item__content__details--links  d-flex "> <a class="link" href="#">Read
+                  More</a><a class="link link--bg-yellow" href="#">Book
                   Now</a>
-              </div>
+                            </div>
+                        </div>
+                        <div class="recomended__container__item__content__image">
+                            <span class="recomended__container__item__content__image--location"><img class="m-auto"
+                  src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="content--display img_4">
-              <span class="second"><img class="m-auto" src="./assets/Location.svg" alt=""> St. Petersburg, Russia</span>
-            </div>
-          </div>
-        </div>
-        <div class="recomended__container--col ">
-          <div class="content ">
-            <div class="content--text">
-              <h4 class="text_h4">GRAND HOTEL WIEN</h4>
-              <div class="stars">
-                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg"
-                  alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
-              </div>
-              <div class="price"><span class="dollar">$</span><span class="number">98</span> per night</div>
-              <p class="parag">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
-              <div class="links  d-flex "> <a class="link" href="#">Read More</a><a class="link_bg" href="#">Book
+
+            <div class="container recomended__container">
+                <div class="d-flex justify-content-between  recomended__container__item">
+                    <div class="bg-white d-sm-flex justify-content-between recomended__container__item__content">
+                        <div class="p-10 recomended__container__item__content__details">
+                            <h4 class="recomended__container__item__content__details--header">Hotel Gramshi</h4>
+                            <div class="recomended__container__item__content__details--stars">
+                                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
+                            </div>
+
+                            <span class="recomended__container__item__content__details--price-text">$99 per night</span>
+                            <p class="recomended__container__item__content__details--paragraph">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
+                            <div class="recomended__container__item__content__details--links  d-flex "> <a class="link" href="#">Read
+                  More</a><a class="link link--bg-yellow" href="#">Book
                   Now</a>
-              </div>
-            </div>
-            <div class="content--display img_5">
-              <span class="second"><img class="m-auto" src="./assets/Location.svg" alt="">Vienna, Austria</span>
-            </div>
-          </div>
-          <div class="content ">
-            <div class="content--text">
-              <h4 class="text_h4">HOTEL WIT STWOSZ</h4>
-              <div class="stars">
-                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg"
-                  alt="">
-              </div>
-              <div class="price"><span class="dollar">$</span><span class="number">75</span> per night</div>
-              <p class="parag">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
-              <div class="links  d-flex "> <a class="link" href="#">Read More</a><a class="link_bg" href="#">Book
+                            </div>
+                        </div>
+                        <div class="recomended__container__item__content__image">
+                            <span class="recomended__container__item__content__image--location"><img class="m-auto"
+                  src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white d-sm-flex justify-content-between recomended__container__item__content">
+                        <div class="p-10 recomended__container__item__content__details">
+                            <h4 class="recomended__container__item__content__details--header">Hotel Gramshi</h4>
+                            <div class="recomended__container__item__content__details--stars">
+                                <img src="./assets/star.svg" alt="star"><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt=""><img src="./assets/star.svg" alt="">
+                            </div>
+
+                            <span class="recomended__container__item__content__details--price-text">$99 per night</span>
+                            <p class="recomended__container__item__content__details--paragraph">Quisque egestas a est in convallis. Maecenas pellentesque.</p>
+                            <div class="recomended__container__item__content__details--links  d-flex "> <a class="link" href="#">Read
+                  More</a><a class="link link--bg-yellow" href="#">Book
                   Now</a>
-              </div>
-            </div>
-            <div class="content--display img_6">
-              <span class="second"><img class="m-auto" src="./assets/Location.svg" alt="">Kraków, Poland</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                            </div>
+                        </div>
+                        <div class="recomended__container__item__content__image">
+                            <span class="recomended__container__item__content__image--location"><img class="m-auto"
+                  src="./assets/Location.svg" alt=""> Albania ,Gramsh</span>
+                        </div>
+                    </div>
+                </div>
 
-
-
-    <section class="testimonials container-fluid">
-      <div class="testimonials__container container">
-        <div class="testimonials__container__top">
-          <span class="top top--span">Happy Memories</span>
-          <h2 class="top top--h2"><span>Our </span>Testimonials</h2>
-          <div class="top top--line"></div>
-        </div>
-
-        <div class="testimonials__container__card d-flex justify-content-between">
-          <div class="card hover_card">
-            <div class="card__img img_card_bg1">
-              <div class="card__img--avatar avatar_1"></div>
-            </div>
-            <div class="card--content">
-              <h5 class="card_text"><span class="card_text__span">Nicole </span>Beck</h5>
-              <div class="card-content-img">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-              </div>
-              <p class="card-parag">Suspendisse blandit orci quis lorem eleifend maximus. Quisque nec mattis ante. Nam
-                id ex id dui euismod
-                volutpat et id quam. Fusce finibus accumsan tristique. Morbi id mauris massa.</p>
-
-              <a class="link" href="#">Read More</a>
-              <div class="line"></div>
-              <div class="card-content-footer">
-                <div class="footer-img img_1"></div>
-                <div class="footer-img img_2"></div>
-                <div class="footer-img img_3"></div>
-              </div>
             </div>
 
-          </div>
-          <div class="card hover_card_1 ">
-            <div class="card__img img_card_bg2">
-              <div class="card__img--avatar avatar_2"></div>
-            </div>
-            <div class="card--content">
-              <h5 class="card_text"><span class="card_text__span">Petter </span>Robertson</h5>
-              <div class="card-content-img">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-              </div>
-              <p class="card-parag">Nulla elit justo, dapibus ut lacus ac, ornare elementum neque. Nam sit amet lacus
-                non nunc cursus fermentum ut eu justo. Quisque a eros a urna blandit feugiat quis sit amet diam.</p>
+        </div>
+        </div>
 
-              <a class="link" href="#">Read More</a>
-              <div class="line"></div>
-              <div class="card-content-footer ">
-                <div class="footer-img img_1"></div>
-                <div class="footer-img img_2"></div>
-                <div class="footer-img img_3"></div>
-              </div>
+        <div class="padding-7 testimonials container-fluid">
+
+            <div class="container mb-3 testimonials__header">
+                <span class="testimonials__header--text-small">Happy Memories</span>
+                <h2 class="testimonials__header--text-header"><span class="testimonials__header--text-header-bold">Our
+          </span>Testimonials</h2>
+                <div class="testimonials__header--line"></div>
             </div>
 
-          </div>
-          <div class="card hover_card_2">
-            <div class="card__img img_card_bg3">
-              <div class="card__img--avatar avatar_3"></div>
-            </div>
-            <div class="card--content">
-              <h5 class="card_text"><span class="card_text__span">Kathy </span>Harrison</h5>
-              <div class="card-content-img">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-                <img class="star" src="./assets/star.svg" alt="">
-              </div>
-              <p class="card-parag">Maecenas facilisis sit amet mauris eget aliquam. Integer vitae scelerisque velit.
-                Integer in magna ut eros vulputate hendrerit. Proin commodo ex et placerat fermentum.</p>
 
-              <a class="link" href="#">Read More</a>
-              <div class="line"></div>
-              <div class="card-content-footer ">
-                <div class="footer-img img_1"></div>
-                <div class="footer-img img_2"></div>
-                <div class="footer-img img_3"></div>
-              </div>
-            </div>
+            <div class="d-lg-flex justify-content-between container testimonials__container ">
+                <div class="testimonials__container__card card">
+                    <div class="position-absolute testimonials__container__card__img ">
+                        <div class="testimonials__container__card__img--avatar "></div>
+                    </div>
+                    <div class="text-center p-2  testimonials__container__card__content">
+                        <h5 class="font-weight-bold testimonials__container__card__content--text-header"><span class="testimonials__container__card__content--text-header-bold ">Nicole </span>Beck
+                        </h5>
+                        <div class="testimonials__container__card__content__stars">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                        </div>
+                        <p class="testimonials__container__card__content--parag">Suspendisse blandit orci quis lorem eleifend maximus. Quisque nec mattis ante. Nam id ex id dui euismod volutpat et id quam. Fusce finibus accumsan tristique. Morbi id mauris massa.</p>
 
-          </div>
-        </div>
-      </div>
-    </section>
+                        <a class="testimonials__container__card__content--link" href="#">Read More</a>
+                        <div class="testimonials__container__card__content--line"></div>
+                        <div class="d-flex justify-content-around testimonials__container__card__content__footer">
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                        </div>
+                    </div>
 
+                </div>
 
-    <section class="gallery ">
-      <div class="gallery__top container d-flex justify-content-between">
-        <div class="gallery__top__left">
-          <span class="top top--span">Happy Memories</span>
-          <h2 class="top top--h2"><span>Photo </span>Gallery</h2>
-          <div class="top top--line"></div>
-          <p class="top top--parag">Vestibulum feugiat vitae tortor ut venenatis. Sed cursus, purus eu euismod bibendum,
-            diam
-            nisl suscipit odio, vitae ultrices mauris dolor quis mauris. Curabitur ac metus id leo maximus porta.</p>
-        </div>
-        <div class="gallery-top-right">
-          <img src="./assets/camera.svg" alt="">
-        </div>
-      </div>
+                <div class="testimonials__container__card card">
+                    <div class="position-absolute testimonials__container__card__img ">
+                        <div class="testimonials__container__card__img--avatar "></div>
+                    </div>
+                    <div class="text-center p-2  testimonials__container__card__content">
+                        <h5 class="font-weight-bold testimonials__container__card__content--text-header"><span class="testimonials__container__card__content--text-header-bold ">Nicole </span>Beck
+                        </h5>
+                        <div class="testimonials__container__card__content__stars">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                        </div>
+                        <p class="testimonials__container__card__content--parag">Suspendisse blandit orci quis lorem eleifend maximus. Quisque nec mattis ante. Nam id ex id dui euismod volutpat et id quam. Fusce finibus accumsan tristique. Morbi id mauris massa.</p>
 
-      <div class="gallery--first container">
-        <div class="gallery-flex_1 gallery-hover">
-          <div class="filter"></div>
-        </div>
-        <div class="gallery-flex_2 gallery-hover">
-          <div class="filter"></div>
+                        <a class="testimonials__container__card__content--link" href="#">Read More</a>
+                        <div class="testimonials__container__card__content--line"></div>
+                        <div class="d-flex justify-content-around testimonials__container__card__content__footer">
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="gallery-flex_3 gallery-hover">
-          <div class="filter"></div>
+                </div>
 
-        </div>
-      </div>
-      <div class="gallery--second container">
-        <div class="gallery-flex_1 gallery-hover">
-          <div class="filter"></div>
+                <div class="testimonials__container__card card">
+                    <div class="position-absolute testimonials__container__card__img ">
+                        <div class="testimonials__container__card__img--avatar "></div>
+                    </div>
+                    <div class="text-center p-2  testimonials__container__card__content">
+                        <h5 class="font-weight-bold testimonials__container__card__content--text-header"><span class="testimonials__container__card__content--text-header-bold ">Nicole </span>Beck
+                        </h5>
+                        <div class="testimonials__container__card__content__stars">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                            <img class="star" src="./assets/star.svg" alt="">
+                        </div>
+                        <p class="testimonials__container__card__content--parag">Suspendisse blandit orci quis lorem eleifend maximus. Quisque nec mattis ante. Nam id ex id dui euismod volutpat et id quam. Fusce finibus accumsan tristique. Morbi id mauris massa.</p>
 
-        </div>
-        <div class="gallery-flex_2 gallery-hover">
-          <div class="filter"></div>
+                        <a class="testimonials__container__card__content--link" href="#">Read More</a>
+                        <div class="testimonials__container__card__content--line"></div>
+                        <div class="d-flex justify-content-around testimonials__container__card__content__footer">
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                            <div class="testimonials__container__card__content__footer--image"></div>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="gallery-flex_3 gallery-hover">
-          <div class="filter"></div>
-
-        </div>
-        <div class="gallery-flex_4 gallery-hover">
-          <div class="filter"></div>
-
-        </div>
-      </div>
-      <div class="gallery--third container ">
-        <div class="gallery-flex_1 gallery-hover">
-          <div class="filter"></div>
-
-        </div>
-        <div class="gallery-flex_2 gallery-hover">
-          <div class="filter"></div>
-
-        </div>
-        <div class="gallery-flex_3 gallery-hover">
-          <div class="filter"></div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <section class="blog container-fluid">
-      <div class="blog__container container">
-        <div class="blog__container__top d-flex justify-content-between">
-          <div class="blog__container__top--left">
-            <span class="top top--span">Happy Memories</span>
-            <h2 class="top top--h2"><span>Our </span>Blog</h2>
-            <div class="top top--line"></div>
-            <p class="top top--parag">Vestibulum feugiat vitae tortor ut venenatis. Sed cursus, purus eu euismod
-              bibendum, diam
-              nisl suscipit odio, vitae ultrices mauris dolor quis mauris. Curabitur ac metus id leo maximus porta.</p>
-          </div>
-          <div class="blog__container__top--right">
-            <img src="./assets/list.svg" alt="">
-          </div>
-        </div>
-
-        <div class="owl-carousel owl-theme">
-          <div class="item d-flex">
-            <div class="item-img item__1">
-              <div class="filter "></div>
+                </div>
             </div>
 
-            <div class="item-content">
-              <h4 class="item_h4">ETIAM SIT AMET TELLUS PORTTITOR</h4>
-              <span class="item_span">Mon, 03-23-2022</span>
-              <p class="item_parag">Aenean nisl nunc, faucibus sit amet rutrum vitae, ultricies ornare urna. Maecenas
-                hendrerit fermentum
-              </p>
-              <a class="link" href="#">Read More</a>
-            </div>
-          </div>
-          <div class="item d-flex">
-            <div class="item-img item__2">
-              <div class="filter reverse"></div>
-            </div>
-
-            <div class="item-content">
-              <h4 class="item_h4">DUIS MATTIS AUGUE UT ORCI COMMODO</h4>
-              <span class="item_span">Mon, 02-5-2022</span>
-              <p class="item_parag">Mauris vitae varius velit, viverra vulputate nulla. Nunc quis felis dolor. Donec
-                gravida tincidunt finibus.
-              </p>
-              <a class="link" href="#">Read More</a>
-            </div>
-          </div>
-          <div class="item d-flex">
-            <div class="item-img item__3">
-              <div class="filter  "></div>
-            </div>
-
-            <div class="item-content">
-              <h4 class="item_h4">Lorem ipsum dolor sit amet bela</h4>
-              <span class="item_span">Mon, 02-05-2022</span>
-              <p class="item_parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sit consectetur
-                veritatis?
-              </p>
-              <a class="link" href="#">Read More</a>
-            </div>
-          </div>
-          <div class="item d-flex">
-            <div class="item-img item__4">
-              <div class="filter reverse "></div>
-            </div>
-
-            <div class="item-content">
-              <h4 class="item_h4">ETIAM SIT AMET TELLUS PORTTITOR</h4>
-              <span class="item_span">Mon, 02-05-2022</span>
-              <p class="item_parag">Aenean nisl nunc, faucibus sit amet rutrum vitae, ultricies ornare urna. Maecenas
-                hendrerit fermentum
-              </p>
-              <a class="link" href="#">Read More</a>
-            </div>
-          </div>
 
         </div>
 
 
-      </div>
-      </div>
-    </section>
 
-
-
-    <section class="subscribe container-fluid">
-      <div class="subscribe__container container d-flex justify-content-between">
-        <div class="subscribe__container--left">
-          <span class="subscribe subscribe--span">SUBSCRIBE US</span>
-          <h2 class="subscribe subscribe--text">GET LATEST OFFERS</h2>
-        </div>
-        <div class="subscribe__container--right">
-
-          <form action="" class="d-flex email email-forn justify-content-between">
-            <div class="email__flex">
-              <label for=""><img src="./assets/email.svg" alt=""></label>
-              <input class="email__input" type="email" name="emiail" id="" placeholder="Enter Your Email...">
+        <div class=" margin-7 gallery ">
+            <div class="container d-lg-flex text mb-3  justify-content-between gallery__header ">
+                <div class="gallery__header__left">
+                    <span class="gallery__header__left--text-small">Happy Memories</span>
+                    <h2 class="gallery__header__left--header"><span class="font-weight-bold">Photo </span>Gallery</h2>
+                    <div class="gallery__header__left--line m-auto"></div>
+                    <p class="gallery__header__left--parag m-auto">Vestibulum feugiat vitae tortor ut venenatis. Sed cursus, purus eu euismod bibendum, diam nisl suscipit odio, vitae ultrices mauris dolor quis mauris. Curabitur ac metus id leo maximus porta.</p>
+                </div>
+                <div class="gallery__header__right">
+                    <img class="gallery__header__right--image" src="./assets/camera.svg" alt="">
+                </div>
             </div>
 
-            <button class="btn"><img src="./assets/arrow.svg" alt=""></button>
-
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__filter">
-      <div class="footer__container container d-flex justify-content-between ">
-        <div class="footer__container--left ">
-          <div class="footer-flex  d-flex justify-content-between ">
-            <div class="footer-flex-logo">
-              <h2 class="footer-flex__h2"> <span class="text__span">Sun</span>Tour</h2>
-              <div class="line"></div>
-            </div>
-            <div class="icons ">
-              <img src="./assets/twiter.png" alt="">
-              <img src="./assets/fb.png" alt="">
-              <img src="./assets/gog.png" alt="">
-              <img src="./assets/in.png" alt="">
+            <div class="d-lg-flex justify-content-between container gallery__grid">
+                <div class="gallery__grid__image" style="max-width:580px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
             </div>
 
-          </div>
-          <p class="parag">Vestibulum tincidunt venenatis scelerisque. Proin quis enim lacinia, vehicula massa et,
-            mollis urna. Proin nibh mauris, blandit vitae convallis at, tincidunt vel tellus. Praesent posuere nec
-            lectus non cursus.</p>
+
+            <div class="d-lg-flex mt-3 justify-content-between container gallery__grid">
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+            </div>
+
+            <div class="d-lg-flex mt-3 justify-content-between container gallery__grid">
+
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+                <div class="gallery__grid__image" style="max-width:285px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+
+                <div class="gallery__grid__image" style="max-width:580px;">
+                    <div class="gallery__grid__image__filter"></div>
+                </div>
+            </div>
 
 
-
-          <div class="links__footer">
-
-            <a href="" class="link_1">Home</a>
-            <a href="" class="link">About</a>
-            <a href="" class="link">Tours</a>
-            <a href="" class="link">Hotels</a>
-            <a href="" class="link">Blog</a>
-            <a href="" class="link">Contacts</a>
-
-          </div>
-
-          <div class="line"></div>
-          <p class="copyright">Copyright © SunTour. 2022. All Right Reserved</p>
         </div>
 
 
-        <div class="footer__container--right ">
-          <div class="footer-contacts">
-            <p class="location"><img src="./assets/Location.svg" alt="">7706 Lake Street, Jacksonville Beach, FL 32250
-            </p>
-            <span class="phone"><img src="./assets/phone.svg" alt="">(207)-675-9713</span>
-            <a class="d-flex" href="#"><img src="./assets/mail.svg" alt=""> support.suntour@example.com</a>
-          </div>
+        <div class="padding-7  container-fluid blog ">
+            <div class="container d-lg-flex justify-content-between blog__header">
+                <div class="text-white blog__header__left">
+                    <span class="blog__header__left--text-small">Happy Memories</span>
+                    <h2 class="blog__header__left--text-header"><span>Our </span>Blog</h2>
+                    <div class="m-auto blog__header__left--line "></div>
+                    <p class="m-auto text-white blog__header__left--parag">Vestibulum feugiat vitae tortor ut venenatis. Sed cursus, purus eu euismod bibendum, diam nisl suscipit odio, vitae ultrices mauris dolor quis mauris. Curabitur ac metus id leo maximus porta.</p>
+                </div>
+                <div class="blog__header__top__right">
+                    <img class="blog__header__top__right--ing" src="./assets/list.svg" alt="">
+                </div>
+            </div>
+            <div class="mt-3  container owl-carousel owl-theme blog__carousel">
+                <div class="item d-sm-flex bg-white blog__carousel__item">
+                    <div class="blog__carousel__item__img">
+                        <div class="blog__carousel__item__img--animation"></div>
+                    </div>
+                    <div class="blog__carousel__item__content">
+                        <h4 class="blog__carousel__item__content--text-header">ETIAM SIT AMET TELLUS PORTTITOR</h4>
+                        <span class="blog__carousel__item__content--text-date">Mon, 03-23-2022</span>
+                        <p class="blog__carousel__item__content--paragraph">Aenean nisl nunc, faucibus sit amet rutrum vitae, ultricies ornare urna. Maecenas hendrerit fermentum
+                        </p>
+                        <a class="link blog__carousel__item__content--link " href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="item d-sm-flex bg-white blog__carousel__item">
+                    <div class="blog__carousel__item__img">
+                        <div class="blog__carousel__item__img--animation"></div>
+                    </div>
+                    <div class="blog__carousel__item__content">
+                        <h4 class="blog__carousel__item__content--text-header">ETIAM SIT AMET TELLUS PORTTITOR</h4>
+                        <span class="blog__carousel__item__content--text-date">Mon, 03-23-2022</span>
+                        <p class="blog__carousel__item__content--paragraph">Aenean nisl nunc, faucibus sit amet rutrum vitae, ultricies ornare urna. Maecenas hendrerit fermentum
+                        </p>
+                        <a class="link blog__carousel__item__content--link " href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="item d-sm-flex bg-white blog__carousel__item">
+                    <div class="blog__carousel__item__img">
+                        <div class="blog__carousel__item__img--animation"></div>
+                    </div>
+                    <div class="blog__carousel__item__content">
+                        <h4 class="blog__carousel__item__content--text-header">ETIAM SIT AMET TELLUS PORTTITOR</h4>
+                        <span class="blog__carousel__item__content--text-date">Mon, 03-23-2022</span>
+                        <p class="blog__carousel__item__content--paragraph">Aenean nisl nunc, faucibus sit amet rutrum vitae, ultricies ornare urna. Maecenas hendrerit fermentum
+                        </p>
+                        <a class="link blog__carousel__item__content--link " href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="item d-sm-flex bg-white blog__carousel__item">
+                    <div class="blog__carousel__item__img">
+                        <div class="blog__carousel__item__img--animation"></div>
+                    </div>
+                    <div class="blog__carousel__item__content">
+                        <h4 class="blog__carousel__item__content--text-header">ETIAM SIT AMET TELLUS PORTTITOR</h4>
+                        <span class="blog__carousel__item__content--text-date">Mon, 03-23-2022</span>
+                        <p class="blog__carousel__item__content--paragraph">Aenean nisl nunc, faucibus sit amet rutrum vitae, ultricies ornare urna. Maecenas hendrerit fermentum
+                        </p>
+                        <a class="link blog__carousel__item__content--link " href="#">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    </div>
 
 
-  </footer>
+        <div class="padding-7 container-fluid subscribe">
+            <div class=" container d-md-flex justify-content-between subscribe__container">
+                <div class="subscribe__container__left">
+                    <span class="subscribe__container__left--small-text">SUBSCRIBE US</span>
+                    <h2 class="text-white subscribe__container__left--header-text">GET LATEST OFFERS</h2>
+                </div>
+                <div class=" subscribe__container__right">
+                    <form class="d-flex justify-content-between  bg-white subscribe__container__right__form form-control justify-content-between">
+                        <div class=" subscribe__container__right__form__input">
+                            <label class="subscribe__container__right__form__input--img" for=""><img src="./assets/email.svg"
+                  alt=""></label>
+                            <input class="ml-3 subscribe__container__right__form__input--input" type="email" name="emiail" id="" placeholder="Enter Your Email...">
+                        </div>
+
+                        <button class="btn"><img src="./assets/arrow.svg" alt=""></button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
 
 
 
+    </main>
+
+
+    <footer class="container-fluid padding-7 text-white footer">
+        <div class="container d-lg-flex justify-content-between  footer__container   ">
+            <div class="footer__container__left ">
+                <div class="d-lg-flex m-auto text-md-centerjustify-content-between footer__container__left__logo">
+                    <div class="d-fl">
+                        <h2 class="footer__container__left__logo--header-text"> <span class="footer__container__left__logo--header-text--yellow">Sun</span>Tour</h2>
+                        <div class="mb-3 m-auto footer__container__left__logo--line"></div>
+                    </div>
+                    <div class="m-auto footer__container__left__logo__icons ">
+                        <img class="m-3" src="./assets/twiter.png" alt="">
+                        <img class="m-3" src="./assets/fb.png" alt="">
+                        <img class="m-3" src="./assets/gog.png" alt="">
+                        <img class="m-3" src="./assets/in.png" alt="">
+                    </div>
+
+                </div>
+                <p class="mw-100 w-75 footer__container__left--paragraph">Vestibulum tincidunt venenatis scelerisque. Proin quis enim lacinia, vehicula massa et, mollis urna. Proin nibh mauris, blandit vitae convallis at, tincidunt vel tellus. Praesent posuere nec lectus non cursus.</p>
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"></script>
-  <!-- Owl Carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- custom JS code after importing jquery and owl -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel();
-    });
+                <div class="mt-3 mb-3 footer__container__left__links">
 
-    $('.owl-carousel').owlCarousel({
-      margin: 10,
-      loop: true,
-      autoWidth: true,
-      items: 4,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        600: {
-          items: 3,
-        },
-        1000: {
-          items: 5,
-          nav: true,
-          loop: false
-        }
-      }
-    })
-  </script>
+                    <a href="#" class="ml-3 link footer__container__left__links--link ">Home</a>
+                    <a href="#" class="ml-3 footer__container__left__links--link">About</a>
+                    <a href="#" class="ml-3 footer__container__left__links--link">Tours</a>
+                    <a href="#" class="ml-3 footer__container__left__links--link">Hotels</a>
+                    <a href="#" class="ml-3 footer__container__left__links--link">Blog</a>
+                    <a href="#" class="ml-3 footer__container__left__links--link">Contacts</a>
 
-  <script src="./script/script.js"></script>
+                </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                <div class="mb-3 footer__container__left--line"></div>
+                <p class=" text-white footer__container__left--copyright ">Copyright © SunTour. 2022. All Right Reserved</p>
+            </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="m-auto footer__container__right ">
+                <p class=" footer__container__right--location"><img class="m-2 " src="./assets/Location.svg" alt="">7706 Lake Street,Jacksonville
+                </p>
+                <p class="footer__container__right--phone"><img class="m-2 " src="./assets/phone.svg" alt="">(207)-675-9712
+                </p>
+                <a class="d-flex m-auto justify-content-center footer__container__right--link link"><img class="m-2 " src="./assets/mail.svg" alt=""> support.suntour@example.com
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            margin: 40,
+            loop: true,
+            autoWidth: true,
+            items: 4,
+            mergeFit: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                }
+            }
+        })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
 </body>
 
